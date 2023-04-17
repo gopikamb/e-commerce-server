@@ -1,0 +1,3 @@
+# ignore node-modules in github
+node_modules
+.env

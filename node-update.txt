@@ -1,0 +1,46 @@
+               Server with Node & Express (Deployable Server)
+               ----------------------------------------------
+
+    1. Create a server folder
+    2. Inside server folder generate package.json file : npm init -y   
+    3. Install following packages - express , dotenv, cors , mongoose : npm i express dotenv cors mongoose
+    4. Create index.js(entry file) in the server folder
+    5. Create .env file to store all the environmental variables in the server
+    6. Create .gitignore file in server folder
+    7. Import dotenv , express , cors in index.js
+    8. Create server app using express
+    9. Use cors and express.json() to your server app  //cors used to accept requests from frontend into backend and  json content in the body of express.json() is parse in to javascript
+    10. Create port to listen your server app 
+    11. Run/Listen server app in the specified port
+    12. Create routes(what are the paths used by server to resolve requests) folder to hold all api request in server folder ,create router.js file to resolve api request from client
+             - using express.Router object, we define routes(router object is used to define routes for all api requests which is given by the client) for all api
+             - inside each routes we have give logic to resolve api
+     13. To define logic to resolving api, create controller folder(model (what type of data is stored),view(where it is seen - router),controller(how data is bring in to that view)) ,
+          inside create productController.js file
+
+       The name of collection should be plural and small letter and it is same as the model name
+       
+     Environment variables are used to store app secrets and configuration data, which are retrieved by your running app when needed.
+     Environment variables add dynamicity to your static code base; you can switch between internal/external resources based on the value of the environment variable passed to your app.
+
+
+           Database SetUp - MOngoDb Atlas
+           ------------------------------
+
+    1. To get connectionstring : Open Atlas, goto Database , click connect button , then choose connect with application , copy connection string   :
+              mongodb+srv://gopikamb2000:<password>@cluster0.kwahtrv.mongodb.net/<Database-name>?retryWrites=true&w=majority
+    2. Create db folder inserver , where we use mongoose to connect mongodb with node app
+    3. Import connection file into index.js
+    4. To define schema for data to be stored in db, create model folder in server app, inside create productSchema file
+           - import mongoose
+           - using mongoose define schema
+           - create model/collection using the above schema
+           - export model
+           
+
+
+
+
+      
+
+
